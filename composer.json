@@ -1,0 +1,27 @@
+{
+    "name": "frnk/backup-bundle",
+    "type": "symfony-bundle",
+    "description": "Symfony FRNKBackupBundle",
+    "keywords": ["backup management"],
+    "homepage": "http://hanken.github.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Franco Fallica",
+            "email": "franco.fallica@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.2",
+        "symfony/framework-bundle": ">=2.1,<2.3-dev",
+    },
+    "require-dev": {
+        "symfony/framework-bundle": "*",
+    },
+    "autoload": {
+        "psr-0": { "FRNK\\BackupBundle": "" }
+    },
+    "target-dir": "FRNK/BackupBundle",
+    
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+  
+    <parameters>
+        <parameter key="frnk_backup.folder_backup.class">FRNK\BackupBundle\BackupTask\FolderBackupTask</parameter>
+    </parameters>
+
+    <services>
+       
+        <service id="frnk_backup.folder_backup" class="%frnk_backup.folder_backup.class%" public="false" >
+            <argument>%frnk_backup.folder_backup.paths%</argument>
+            <argument>%frnk_backup.folder_backup.tmp_dir%</argument>
+            <argument>%frnk_backup.folder_backup.include_hidden_files%</argument>
+            <argument>%frnk_backup.folder_backup.include_vcs_folders%</argument>
+            <tag name="frnk_backup.backup_task" task_name="FolderBackup" namespace="folder_nackup" />
+        </service>
+    </services>
+</container>
