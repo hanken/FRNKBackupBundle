@@ -1,4 +1,14 @@
-<?php
+<?php 
+ /*
+ * @Copyright Copyright(c) 2012, franco fallica <franco.fallica@gmail.com>
+ *
+ * This file is part of the FRNKBackupBundle package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+
 
 if (file_exists($file = __DIR__.'/../vendor/autoload.php')) {
     $loader = require_once $file;
