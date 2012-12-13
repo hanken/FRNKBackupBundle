@@ -16,7 +16,7 @@
             <argument>%frnk_backup.folder_backup.tmp_dir%</argument>
             <argument>%frnk_backup.folder_backup.include_hidden_files%</argument>
             <argument>%frnk_backup.folder_backup.include_vcs_folders%</argument>
-            <tag name="frnk_backup.backup_task" task_name="FolderBackup" namespace="folder_nackup" />
+            <tag name="frnk_backup.backup_task" task_name="FolderBackup" namespace="folder_backup" />
         </service>
     </services>
 </container>
