@@ -55,7 +55,6 @@ EOF
             $manager->runBackupsByTask($task);
         }
         
-        var_dump(memory_get_peak_usage());
     }
 }
 
